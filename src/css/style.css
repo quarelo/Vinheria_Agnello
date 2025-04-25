@@ -1,0 +1,529 @@
+/* Fonts */
+@font-face {
+    font-family: Montserrat_Alternates;
+    src: url(../assets/fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+    font-family: Italiana;
+    src: url(../assets/fonts/Italiana/Italiana-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5C2F2E;
+    color: white;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header-section {
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.header-nav a {
+    font-family: Italiana, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.header-nav a:not(:has(img)):hover {
+    border-bottom: 1px solid white;
+}
+
+.header-nav a img#logo {
+    width: 50px;
+}
+
+/* Home Section */
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    padding: 0 80px;
+}
+
+.home-text {
+    flex: 1;
+}
+
+.home-text h1 {
+    font-family: Italiana, serif;
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 400px;
+    margin-bottom: 50px;
+
+    text-align: start;
+}
+
+.home-text p {
+    font-family: Poppins, serif;
+    font-size: 16px;
+
+    max-width: 500px;
+
+    text-align: justify;
+}
+
+.home-text h5 {
+    font-family: Italiana, serif;
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 400px;
+    margin-bottom: 50px;
+
+    text-align: start;
+}
+
+.home-text button {
+    padding: 8px 30px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-text button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home-image {
+    flex: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 450px;
+    position: relative;
+    z-index: 2;
+}
+
+.blur-background {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(212, 163, 115, 0.8) 5%, transparent 75%);
+    filter: blur(80px);
+    z-index: 1;
+}
+
+/* Products Section */
+.products-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-family: Italiana;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.products-section h3 {
+    font-family: Italiana;
+    font-size: 32px;
+    margin-bottom: 40px;
+
+    margin-top: 20px;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    font-family: Poppins;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-card p {
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.view-all-btn {
+    margin-top: 30px;
+    padding: 8px 30px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* About Section */
+.about-section {
+    margin-top: 100px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    width: 80%;
+}
+
+.about-text h2 {
+    font-family: Italiana;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about-text h6 {
+    font-family: Italiana;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-family: Poppins;
+    font-size: 16px;
+
+    text-align: start;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.experience-section h2 {
+    font-family: Italiana;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.experience-section p {
+    font-family: Poppins;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: #4B2626;
+    padding: 30px 0;
+    margin-top: 100px;
+
+    width: 100vw;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.footer-links a {
+    font-family: Poppins;
+    font-size: 14px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #D4A373;
+}
+
+
+
+/* Team List Section */
+
+.team-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.team-text .text{
+    width: 50%;
+    height: 80%;
+}
+
+.team-text img{
+    width: 40%;
+    height: 90%;
+
+    border-radius: 20px;
+}
+
+.text h5 {
+    font-family: Italiana, serif;
+    font-size: 40px;
+
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+    text-align: start;
+}
+.text p {
+    font-family: Poppins, serif;
+    font-size: 16px;
+
+    text-align: start;
+}
+
+
+.team-list {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+.team-list h2 {
+    font-family: Italiana, serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.team-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.team-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    max-width: 200px;
+}
+
+.team-list img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #D4A373;
+}
+
+.team-list span {
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+}
+
+/* Formulário de Contato */
+.about-text label {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.about-text input,
+.about-text textarea {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D4A373;
+    background-color: #F5F5F5;
+    color: #333;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.about-text input:focus,
+.about-text textarea:focus {
+    outline: none;
+    border-color: #D4A373;
+    background-color: #fff;
+}
+
+.about-text button {
+    padding: 12px 25px;
+    background-color: #D4A373;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.about-text button:hover {
+    background-color: #B88B56;
+}
+
+.about-text button:active {
+    background-color: #8E6C42;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image img {
+        max-width: 80%;
+    }
+}
+/* Nutrition Table */
+.nutrition-table-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.nutrition-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Poppins, sans-serif;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.nutrition-table th, .nutrition-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nutrition-table th {
+    background-color: rgba(212, 163, 115, 0.2);
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}
+
+.nutrition-table td {
+    font-size: 16px;
+    color: white;
+}
+
+.nutrition-table tr:last-child td {
+    border-bottom: none;
+}
+
+.table-note {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ccc;
+    font-family: Poppins, sans-serif;
+}
