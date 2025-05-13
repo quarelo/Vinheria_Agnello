@@ -1,0 +1,65 @@
+/*Requisitos adicionais*/
+
+/*Pseudo-classes*/
+.header-nav a:hover {
+  color: #ffcccb;
+  transition: color 0.3s ease; /*Transição*/
+}
+
+button:focus {
+  outline: 2px solid #ffcccb;
+  transition: outline 0.3s ease; /*Transição*/
+}
+
+.product-card:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/*Pseudo-elementos*/
+.product-card::before {
+  content: "🍷";
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+  display: block;
+  text-align: center;
+}
+
+.about-text p::first-letter {
+  font-size: 160%;
+  color: #ffcccb;
+  font-weight: bold;
+}
+
+/*Animações*/
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.view-all-btn {
+  animation: pulse 2s infinite;
+  transition: transform 0.3s ease;
+}
+
+/*Transformações*/
+.view-all-btn:hover {
+  transform: scale(1.1);
+}
+
+.home-image img {
+  transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+  transform: rotate(-2deg) scale(1.02);
+}
